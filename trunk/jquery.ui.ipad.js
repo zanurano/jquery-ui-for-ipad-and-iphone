@@ -14,7 +14,7 @@ $(function() {
 	// Extend jQuery feature detection
 	//
 	$.extend($.support, {
-		touch: typeof Touch == "object"
+		touch: "ontouchend" in document
 	});
 	
 	//
